@@ -1,0 +1,270 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: currentColor;
+}
+
+a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+  
+
+
+ul{
+    list-style: none;
+}
+
+body{
+    background-color: #111111;
+}
+
+nav a{
+    display: block;
+}
+
+nav a:hover{
+    transition: transform .2s;
+    transform: scale(1.2)
+}
+
+/* header */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #fff; */
+    background-color: #555555;
+    color: #fff;
+    padding: 0 60px;
+    height: 60px;
+    width: 100%;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+header .logo{
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+.logo a {
+    display: block;
+}
+
+.logo a:hover{
+    transition: transform .2s;
+    transform: scale(1.2)
+}
+
+header > nav > ul{
+    display: flex;
+    align-items: center;
+}
+
+header > nav > ul.menu >li.menu-item{
+    margin-left: 20px;
+}
+
+/* header */
+
+/* banner */
+
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #555555;
+    padding: 20px;
+    min-height: 300px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0px 2px 4px rgba(255, 255, 255, 0.555);
+    border-radius: 0 0 20px 20px;
+
+}
+
+/* banner */
+
+/*vitrine*/
+
+.vitrine{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #777777;
+    padding: 20px;
+    width: 100%;
+    /* box-shadow: 0px 2px 4px rgba(255, 255, 255, 0.2); */
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 10px auto;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    max-width: 1200px;
+}
+
+/* vitrine*/
+
+/*produto*/
+
+.produto{
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    text-align: center;
+    background-color: #999999;
+    color: #f4f4f4;
+    /* padding: 20px; */
+    width: calc(33.3333% - 10px);
+    box-shadow: 0px 2px 4px rgba(255, 255, 255, 0.568);
+    max-width: 280px;
+    min-height:400px;
+    border-radius: 15px;
+}
+
+.produto h2,
+.produto h3{
+    margin-bottom: 10px;
+}
+
+.produto img{
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+    max-height:250px;
+    
+}
+
+.produto:hover{
+    cursor: pointer;
+    transition: transform .2s; /* Animation */
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+/* produto */
+
+/* footer */
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #555555;
+    color: #fff;
+    padding: 0 20px;
+    height: 60px;
+    width: 100%;
+    box-shadow: 0px -2px 4px rgba(255, 255, 255, 0.2);
+}
+
+footer > nav > ul.menu{
+    display: flex;
+    align-items: center;
+}
+
+
+footer > nav > ul.menu >li.menu-item{
+    margin-left: 20px;
+}
+
+/* footer */
+
+
+@media screen and (max-width: 768px){
+    .produto{
+        width: calc(50% - 10px);
+    }
+    .produto img{
+        width: 100%;
+        max-width: 280px;
+        
+    }
+}
+
+@media screen and (max-width: 480px){
+    .produto{
+        width: 100%;
+    }
+    .produto img{
+        width: 100%;
+        max-width: 280px;
+    }
+
+    header{
+        flex-direction: column;
+        height: 90px;
+        justify-content: center;
+    }
+
+    header .logo{
+        margin-bottom: 10px;
+    }
+
+}
+
+/*
+ ##########dark color palette 1########## 
+
+#1d1e20
+#2D4263
+#C84B31
+#efbbff
+#d896ff
+#be29ec
+#800080
+#660066
+
+#999999
+#777777
+#555555
+#333333
+#111111
+
+#011f4b
+#03396c
+#005b96
+#6497b1
+#b3cde0
+#03002e
+#010048
+#010057
+#02006c
+#090088
+#0eff00
+#1fc600
+#086000
+#0a5d00
+#063b00
+#ffffff
+#666666
+#000000
+#343d46
+#4f5b66
+#65737e
+#a7adba
+#c0c5ce
+#ff0000
+#bf0000
+#800000
+#400000
+#200000
+#011f4b
+#03396c
+#005b96
+#6497b1
+#b3cde0
+#b2d8d8
+#66b2b2
+#008080
+#006666
+#004c4c
+*/

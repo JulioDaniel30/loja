@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar</title>
+    <link rel="stylesheet" href="../css/cadastro.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="/">Empresa</a></div><!-- logo -->
+        <nav>
+            <ul class="menu">
+                <li class="menu-item">
+                    <a href="#">Sobre</a>
+                </li>
+                <li class="menu-item">
+                    <a href="/cadastrar" target="_blank">Cadastrar</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">Contato</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="form-container">
+        <form action="/cadastrar" method="post">
+            <div class="input-container">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required>
+            </div><!-- input-container -->
+            <div class="input-container">
+                <label for="image">Image</label>
+                <input type="text" name="image" id="image" >
+            </div><!-- input-container -->
+            <div class="input-container">
+                <label for="price">Price</label>
+                <input type="text" name="price" id="price" required>
+            </div><!-- input-container -->
+            <div class="input-container">
+                <label for="description">Description</label>
+                <input type="text" name="description" id="description" required>
+            </div><!-- input-container -->
+            <div class="submit-container">
+                <input type="submit" value="cadastrar">
+            </div><!-- submit-container -->
+            </div>
+        </form>
+    </section><!-- form-container -->
+
+    <footer>
+        <nav>
+            <ul class="menu">
+                <li class="menu-item">
+                    <a href="#">Sobre</a>
+                </li>
+                <li class="menu-item">
+                    <a href="/cadastrar" target="_blank">Cadastrar</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">Contato</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script>
+
+        //get status for the form validation in server side whith javascript
+
+        //check if get status is success
+        if(window.status == 200){
+            //show success message
+            console.log("success");
+            showSuccessMessage();
+        }
+    </script>
+
+</body>
+</html>
